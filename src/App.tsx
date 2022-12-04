@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./css/style.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="main-container">
+      123
+      <button className="button-small">click me</button>
+    </div>
+  );
 }
 
 export default App;

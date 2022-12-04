@@ -1,0 +1,107 @@
+
+$backgroundColor: #081A2C;
+$fontColor: #FFFFFF;
+
+%heading-font {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+%main-font {
+  font-size: 14px;
+  color: $fontColor;
+}
+
+%input-hover-set {  background-color: #b9bbbe;
+  border: #3f4756;
+  color: #36393f;}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.main-container {
+  @extend %main-font;
+  background-color: $backgroundColor;
+  height: 100vh;
+}
+
+.modal-win {
+  position: fixed;
+display: flex;
+flex-direction: column;
+  top: 50%;
+  left: 17%;
+  background-color: $backgroundColor;
+  alignItems: "center";
+  width: 300px;
+  height: 200px;
+  justifyContent: space-between;
+  borderRadius: 10px;
+  text-align: center;
+}
+
+.modal-win-header {
+  @extend %heading-font;
+}
+
+.modal-win-content {
+  background-color: $backgroundColor;
+  width: 300px;
+}
+.modal-win-footer {
+  width: 300px;
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  align-self: center;
+  background-color: #2f3136;
+  border-radius: 5px;
+  border-style: initial;
+  color: $fontColor;
+  font-size: 15px;
+  height: 25px;
+  padding: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input:hover {
+  @extend %input-hover-set
+}
+
+.input:focus {
+  @extend %input-hover-set
+}
+
+.button-small {
+  font-size: 15px;
+  background: #818387;
+  color: $fontColor;
+  margin: 0px 5px;
+  padding: 2px;
+  width: 70px;
+  border: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+  overflow: hidden;
+  text-align: center; line-height: 20px;
+}
+.button-small:focus {
+  outline: 0;
+}
+
+.button-small:hover {
+  background: coral;
+  cursor: pointer;
+  transition: 0.3s;}
+
